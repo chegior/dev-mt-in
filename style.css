@@ -1,0 +1,10 @@
+body{
+  background: rgb(255, 244, 2);
+}
+
+
+
+.main_wraper{
+  display: flex;
+
+}
