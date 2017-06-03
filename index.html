@@ -7,10 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DevMtin</title>
 </head>
-
 <body ng-controller='myCtrl1'>
-<h1>TEST</h1>
-{{test}}
+	<!-- MAIN WRAPPER -->
+	<div class="main_wrapper">
+
+	<!-- TOP SECTION  -->
+	<div class="top">
+		<div class="topLeftIcon"><img src="#" alt=""></div>	<!--This ICON will Change-->
+		<h3>DevMountain</h3>
+		<div class="topRighttIcon"><img src="#" alt=""></div>	<!--This ICON will OFFER A MENU-->
+
+	</div>
+	<!-- END OF TOP SECTION  -->
+	<hr>
+	<!-- MAIN CONTENT -->
+	<div class="center">
+
+		<div class="right_panel">
+
+<!-- Initial View No Data -->
+			<div class="welcome_msg">
+				<p>Welcome to <strong>DevMountain</strong> Social</p>
+				<p>Add Some Info Friends Can Find You</p>
+			</div>
+			<div class="formData">
+				<input type="text" ng-model='student.name' id="textFullName" placeholder="Full Name">
+				<input type="text" ng-model='student.tagline'id="textTagLine" placeholder="Tagline">
+				<input type="text" ng-model='student.profileUrl'id="textProfileURL" placeholder="Profile Image Url">
+				<textarea rows="4" cols="50" ng-model='student.bio' placeholder="Bio"></textarea>
+				<button type="button" ng-click='createProfile(student)' name="button">Save Changes</button>
+			</div>
+<!-- END OF Initial FORM View No Data -->
+
+		</div>
+		<div class="left_panel">
+			<img src="#" alt="">
+			<div ng-repeat="ind in students">{{ind.name}}</div>
+
+		</div>
+	</div>
+	<!-- END OF MAIN CONTENT -->
+<hr>
+	<!-- BOTTOM SECTION -->
+	<div class="footer">
+		<a href="#"><span>View Friends</span></a>
+		<a href="#"><span>Find Friends</span></a>
+		<a href="#"><span>Update Profile</span></a>
+	</div>
+	<!-- END OF BOTTOM SECTION -->
+
+
+</div>
+<!-- MAIN WRAPPER -->
+<!-- MAIN WRAPPER -->
+
+<!-- {{test}} -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
