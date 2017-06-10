@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DevMtin</title>
+	<title>DevMtin Social Media</title>
 </head>
 <body ng-controller='myCtrl1'>
 	<!-- MAIN WRAPPER -->
@@ -19,7 +19,6 @@
 
 	</div>
 	<!-- END OF TOP SECTION  -->
-	<hr>
 	<!-- MAIN CONTENT -->
 	<div class="center">
 
@@ -42,12 +41,15 @@
 		</div>
 		<div class="left_panel">
 			<img src="#" alt="">
-			<div ng-repeat="ind in students">{{ind.name}}</div>
+			<div><!-- ng-repeat="ind in students">-->
+				<h2>{{students[30].name}}</h2>
+				<h4>{{students[30].tagline}}</h4>
+				<p>{{students[30].bio}} </p>
+			</div>
 
 		</div>
 	</div>
 	<!-- END OF MAIN CONTENT -->
-<hr>
 	<!-- BOTTOM SECTION -->
 	<div class="footer">
 		<a href="#"><span>View Friends</span></a>

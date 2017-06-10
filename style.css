@@ -6,11 +6,20 @@ body{
 }
 
 input,textarea{
-  width:100%;
+  width:250px;
   padding: 12px 12px;
   margin: 4px 0;
   box-sizing: border-box;
   text-align: left;
+}
+input::placeholder{
+  color:#B6B6B6;
+}
+textarea::placeholder{
+  color:#B6B6B6;
+}
+button{
+  width:250px;
 }
 
 .main_wrapper{
@@ -20,57 +29,77 @@ input,textarea{
   display: flex;
   flex-direction:column;
   height: 100vh;
+
 }
 /*SECTION FOR TOP MENU *//*SECTION FOR TOP MENU */
 /*SECTION FOR TOP MENU *//*SECTION FOR TOP MENU */
 .top{
-
+  padding: 50px 0 20px 0px;
   display: flex;
-  flex:1;
   flex-direction:row;
   justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
 /*SECTION FOR MAIN CONTENT *//*SECTION FOR MAIN CONTENT */
 /*SECTION FOR MAIN CONTENT *//*SECTION FOR MAIN CONTENT */
 .center{
-
-  height: auto;
-  flex:3;
+  width: 80%;
+  margin: 30px auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items:center;
+
+
 }
 
 .right_panel{
   display: flex;
-  flex:1;
   flex-direction: column;
   justify-content: center;
+
+
 }
 
 .right_panel button{
   background: rgb(72, 253, 243);
 }
-.welcome_msg{
+.welcome_msg p{
+  margin: 0px;
+  font-family: Lora-Regular;
+  font-size: 13.18px;
+  color:#232323;
+  text-align: center;
 
 }
+.welcome_msg  strong{
+  color:#74FDF2;
+}
+
 .formData{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
+  justify-content:center;
+  align-content: center;
 }
-#textBio{
-  text-align: center;
-  height: 6.5em;
-}
+  .formData input,textarea,button::placeholder{
+    font-family: Lora-Regular;
+    font-size: 15.96px;
+    color:#B6B6B6;
+  }
+  #textBio{
+    text-align: center;
+    height: 6.5em;
+  }
 
-.left_panel{
-  display: flex;
-  justify-content: center;
-  flex:1;
-}
+  .left_panel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
 
 /*SECTION FOR BOTTOM *//*SECTION FOR BOTTOM */
 /*SECTION FOR BOTTOM *//*SECTION FOR BOTTOM */
@@ -79,8 +108,9 @@ input,textarea{
   left: 0;
   bottom: 0;
   right: 0;
+  padding: 50px 0 20px 0px;
   display: flex;
-  flex:1;
   flex-direction:row;
   justify-content: space-between;
+  border-top: 1px solid black;
 }
